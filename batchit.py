@@ -39,15 +39,15 @@ def generate_response(input_text):
 # Define the main app
 def main():
     st.sidebar.title("Navigation")
-    pages = ["Overview", "Chatbot", "Chat History"]
+    pages = ["Overview", "Chatbot"]
     choice = st.sidebar.selectbox("Go to", pages)
 
     if choice == "Overview":
         show_overview()
     elif choice == "Chatbot":
         chatbot()
-    elif choice == "Chat History":
-        show_chat_history()
+    # elif choice == "Chat History":
+    #     show_chat_history()
 
 
 # Function to display the overview page
@@ -112,8 +112,8 @@ def scroll_latest_message():
 
 
 # Function to display the chat history page
-def show_chat_history():
-    st.title("Chat History")
+# def show_chat_history():
+#     st.title("Chat History")
     # Fetch and display chat history data
     # You can use a database or file to store and retrieve the chat history data
 
